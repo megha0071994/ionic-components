@@ -24,3 +24,28 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+.bg-trans{
+  background: transparent;
+}
+.card-vertical-center{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+.bg-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-image: url('https://www.wallpapertip.com/wmimgs/159-1593170_blue-background-hd-portrait.jpg');
+}
+.dark-shadow{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.bg-primary{
+  background: #ccc;
+}
+.active-bg{
+  background: rgb(210, 233, 10);
+}
