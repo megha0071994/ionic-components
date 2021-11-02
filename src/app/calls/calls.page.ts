@@ -19,4 +19,9 @@ export class CallsPage implements OnInit {
       this.activeSlide = index;
     });
   }
+
+  changeSlide(index: number){
+    this.slider.update();
+    this.slider.slideTo(index);
+  }
 }

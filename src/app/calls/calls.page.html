@@ -1,8 +1,8 @@
 <ion-content>
   <ion-row class="ion-text-center">
-    <ion-col [ngClass]="activeSlide === 0 ? 'active-bg' : 'bg-primary'">First</ion-col>
-    <ion-col [ngClass]="activeSlide === 1 ? 'active-bg' : 'bg-primary'" class="bg-primary">Second</ion-col>
-    <ion-col [ngClass]="activeSlide === 2 ? 'active-bg' : 'bg-primary'" class="bg-primary">Third</ion-col>
+    <ion-col (click)="changeSlide(0)" [ngClass]="activeSlide === 0 ? 'active-bg' : 'bg-primary'">First</ion-col>
+    <ion-col (click)="changeSlide(1)" [ngClass]="activeSlide === 1 ? 'active-bg' : 'bg-primary'">Second</ion-col>
+    <ion-col (click)="changeSlide(2)" [ngClass]="activeSlide === 2 ? 'active-bg' : 'bg-primary'">Third</ion-col>
   </ion-row>
   <ion-slides #mySlider (ionSlideDidChange)="slideChanged($event)">
     <ion-slide>
