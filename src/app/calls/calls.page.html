@@ -1,25 +1,27 @@
-<ion-row class="ion-text-center">
-  <ion-col [ngClass]="activeSlide === 0 ? 'active-bg' : 'bg-primary'">First</ion-col>
-  <ion-col [ngClass]="activeSlide === 1 ? 'active-bg' : 'bg-primary'" class="bg-primary">Second</ion-col>
-  <ion-col [ngClass]="activeSlide === 2 ? 'active-bg' : 'bg-primary'" class="bg-primary">Third</ion-col>
-</ion-row>
-<ion-slides #mySlider (ionSlideDidChange)="slideChanged($event)">
-  <ion-slide>
-    <h1>Slide 1</h1>
-    <h1>Slide 1</h1>
-    <h1>Slide 1</h1>
-    <h1>Slide 1</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Slide 2</h1>
-    <h1>Slide 2</h1>
-    <h1>Slide 2</h1>
-    <h1>Slide 2</h1>
-  </ion-slide>
-  <ion-slide>
-    <h1>Slide 3</h1>
-    <h1>Slide 3</h1>
-    <h1>Slide 3</h1>
-    <h1>Slide 3</h1>
-  </ion-slide>
-</ion-slides>
+<ion-content>
+  <ion-row class="ion-text-center">
+    <ion-col [ngClass]="activeSlide === 0 ? 'active-bg' : 'bg-primary'">First</ion-col>
+    <ion-col [ngClass]="activeSlide === 1 ? 'active-bg' : 'bg-primary'" class="bg-primary">Second</ion-col>
+    <ion-col [ngClass]="activeSlide === 2 ? 'active-bg' : 'bg-primary'" class="bg-primary">Third</ion-col>
+  </ion-row>
+  <ion-slides #mySlider (ionSlideDidChange)="slideChanged($event)">
+    <ion-slide>
+      <h1>Slide 1</h1>
+      <h1>Slide 1</h1>
+      <h1>Slide 1</h1>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+      <h1>Slide 2</h1>
+      <h1>Slide 2</h1>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+      <h1>Slide 3</h1>
+      <h1>Slide 3</h1>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
