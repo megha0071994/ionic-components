@@ -28,7 +28,7 @@
   background: transparent;
 }
 .card-vertical-center{
-  display: flex;
+  display: grid;
   vertical-align: middle;
   align-items: center;
   height: 100%;
@@ -38,7 +38,11 @@
   height: 100%;
   width: 100%;
   display: flex;
-  background-image: url('https://www.wallpapertip.com/wmimgs/159-1593170_blue-background-hd-portrait.jpg');
+  // background-image: url(./assets/Splash.png);
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  background-image: linear-gradient(#2e9cca, #007b0d, #005679);
 }
 .dark-shadow{
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

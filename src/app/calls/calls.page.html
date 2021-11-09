@@ -6,16 +6,30 @@
   </ion-row>
   <ion-slides #mySlider (ionSlideDidChange)="slideChanged($event)">
     <ion-slide>
-      <h1>Slide 1</h1>
-      <h1>Slide 1</h1>
-      <h1>Slide 1</h1>
-      <h1>Slide 1</h1>
+      <div class="slide-inner">
+        <ion-row>
+          <ion-col>
+            <h1>Slide - One</h1>
+          </ion-col>
+        </ion-row>
+        <ion-item class="box-shadow" *ngFor="let item of [1,2,3,4,5]">
+          <ion-label>Name</ion-label>
+          <ion-input class="ion-text-capitalize" type="text" name="name"></ion-input>
+        </ion-item>
+      </div>
     </ion-slide>
     <ion-slide>
-      <h1>Slide 2</h1>
-      <h1>Slide 2</h1>
-      <h1>Slide 2</h1>
-      <h1>Slide 2</h1>
+      <ion-row>
+        <ion-col>
+          <h1>Slide - Two</h1>
+        </ion-col>
+      </ion-row>
+      <ion-list id="labels-list">
+        <ion-list-header>Labels</ion-list-header>
+        <ion-item *ngFor="let item of [1,2,3,4,5]">
+          {{item}}
+        </ion-item>
+      </ion-list>
     </ion-slide>
     <ion-slide>
       <h1>Slide 3</h1>
